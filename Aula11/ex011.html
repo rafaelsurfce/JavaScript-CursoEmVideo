@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+
+    <h1>Descubrindo a nacionalidade </h1>
+    PAIS: <input type="text" name="txtdado" id="txtdado">
+    <input type="button" value="Descubra" onclick="calcule()">
+    <div id="result"></div>
+
+    <script>
+        var dado = window.document.getElementById("txtdado");
+        var resultado = window.document.getElementById("result");
+        function calcule() {
+
+            if (dado.value == 'Brasil'){
+                resultado.innerHTML = ` Você é <strong>Brasileiro</strong>`;
+            }
+            else {
+                resultado.innerHTML = ` Você é <strong>Estrageiro</strong>`;
+            }
+
+        }
+    </script>
+
+    
+</body>
+</html>
